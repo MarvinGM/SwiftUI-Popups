@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		575FE1E72678B817008BEBEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575FE1E62678B817008BEBEB /* ContentView.swift */; };
 		575FE1E92678B818008BEBEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575FE1E82678B818008BEBEB /* Assets.xcassets */; };
 		575FE1EC2678B818008BEBEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575FE1EB2678B818008BEBEB /* Preview Assets.xcassets */; };
+		575FE1F52678B8FA008BEBEB /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 575FE1F42678B8FA008BEBEB /* PopupView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				575FE1F52678B8FA008BEBEB /* PopupView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI Popups";
+			packageProductDependencies = (
+				575FE1F42678B8FA008BEBEB /* PopupView */,
+			);
 			productName = "SwiftUI Popups";
 			productReference = 575FE1E12678B817008BEBEB /* SwiftUI Popups.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 575FE1D82678B817008BEBEB;
+			packageReferences = (
+				575FE1F32678B8FA008BEBEB /* XCRemoteSwiftPackageReference "PopupView" */,
+			);
 			productRefGroup = 575FE1E22678B817008BEBEB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -326,6 +334,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		575FE1F32678B8FA008BEBEB /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		575FE1F42678B8FA008BEBEB /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 575FE1F32678B8FA008BEBEB /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 575FE1D92678B817008BEBEB /* Project object */;
 }
